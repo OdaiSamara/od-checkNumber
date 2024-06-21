@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bs4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
+    <title>phone number</title>
+</head>
+<body>
+    <div class="container">
+        <input type="number" id="input" placeholder="Please Enter Phone Number">
+        <!-- warning for !="10"  -->
+        <div class="alert alert-warning alert-dismissible error">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>Please Enter "10" Number!</strong> <b id="error_text"></b>
+        </div>
+        <!-- message for mtn  -->
+        <div class="alert alert-warning alert-dismissible mtn">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>MTN</strong> <b id="mtn_text"></b>
+        </div>
+        <!-- message for syritel  -->
+        <div class="alert alert-warning alert-dismissible syritel">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>SYRITEL</strong> <b id="syritel_text"></b>
+        </div>
+        <!-- message for other number  -->
+        <div class="alert alert-warning alert-dismissible other">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong></strong> <b id="other_text"></b>
+        </div>
+
+
+
+        <button id="btn">Check Your Number</button>
+    </div>
+    <script src="phone.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="bs4/js/bootstrap.min.js"></script>
+</body>
+
+</html>
